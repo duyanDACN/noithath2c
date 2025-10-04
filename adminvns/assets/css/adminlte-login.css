@@ -1,0 +1,409 @@
+
+.box-login {
+    background: #f0d546;
+    height: 100vh;
+    position:relative;
+    overflow:hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.login-box{width: 495px;height: 100vh;display: flex;align-items: center;box-shadow: 0px 0 10px rgb(0 0 0 / 10%);position: relative;background: #ffffff;z-index: 9999;overflow: hidden;}
+.login-box:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #ffffff;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.login-box > span:nth-child(1) {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, #f0d546, #f0d546);
+    animation: animate1 6s linear infinite;
+    border-radius: 20px;
+}
+
+@keyframes animate1 {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.login-box > span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 1px;
+    background: linear-gradient(to bottom, #f0d546, #f0d546);
+    animation: animate2 6s linear infinite;
+    animation-delay: 1s;
+    border-radius: 20px;
+}
+@keyframes animate2 {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+.login-box > span:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to left, #f0d546, #f0d546);
+    animation: animate3 6s linear infinite;
+    border-radius: 20px;
+}
+
+@keyframes animate3 {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.login-box > span:nth-child(4) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 1px;
+    background: linear-gradient(to top, #f0d546, #f0d546);
+    animation: animate4 6s linear infinite;
+    animation-delay: 1s;
+    border-radius: 20px;
+}
+
+@keyframes animate4 {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+.slide-login-box{
+    width: calc(100% - 495px);
+    position: relative;
+    z-index: 9;
+}
+.slick-login-box{
+    padding: 0 65px;
+    max-width: 930px;
+    margin: 0 auto;
+    position: relative;
+}
+.slick-login-box:before{position:absolute;width:1200px;height:1200px;top:calc(50% - 600px);left:50%;margin-left:-600px;content:"";background:transparent url(../images/trongdong.png) no-repeat center center;background-size:100% auto;opacity:.3}
+.slick-login-box:before{-webkit-animation-name:rotate;-webkit-animation-duration:60s;-webkit-animation-iteration-count:infinite;-webkit-animation-timing-function:linear;-moz-animation-name:rotate;-moz-animation-duration:60s;-moz-animation-iteration-count:infinite;-moz-animation-timing-function:linear}
+@-webkit-keyframes rotate{
+    from{-webkit-transform:rotate(0)}
+    to{-webkit-transform:rotate(360deg)}
+}
+@-moz-keyframes rotate{
+    from{-moz-transform:rotate(0)}
+    to{-moz-transform:rotate(360deg)}
+}
+.slick-login-box .slick-prev{
+    position: absolute;
+    width: 15px;
+    height: 29px;
+    background: url(../images/icon_prev.png) no-repeat!important;
+    left: 35px;
+    top: calc(50% - 14.5px);
+    transform: initial;
+}
+.slick-login-box .slick-prev:hover{
+    opacity: 0.7;
+}
+.slick-login-box .slick-prev:before{
+    content: "";
+}
+.slick-login-box .slick-next{
+    position: absolute;
+    width: 15px;
+    height: 29px;
+    background: url(../images/icon_next.png) no-repeat!important;
+    right: 35px;
+    top: calc(50% - 14.5px);
+    transform: initial;
+}
+.slick-login-box .slick-next:hover{
+    opacity: 0.7;
+}
+.slick-login-box .slick-next:before{
+    content: "";
+}
+.img-slide-login{
+    text-align: center;
+}
+.img-slide-login *{
+    border-radius: 20px;
+}
+.img-slide-login img{
+    border-radius: 20px;
+    margin: 0 auto;
+    width: 100%;
+}
+.flex-box-login{
+    /* max-width: 1366px; */
+    margin: 0 auto;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    flex-flow: wrap;
+}
+.loading-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    object-fit: cover;
+    padding: 0;
+}
+.loading-video video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.loading-video.finish {
+    z-index: -9999;
+}
+.particles-height{height: 100%;position: absolute;left: 0px;top: 0px;width: 100%;pointer-events: none;}
+.login {
+    overflow: hidden;
+    padding: 40px 18px;
+    position: relative;
+    /* top: 50%; */
+    /* left: 50%; */
+    /* -webkit-transform: translate(-50%, -50%); */
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
+    -webkit-transition: -webkit-transform 300ms, box-shadow 300ms;
+    -moz-transition: -moz-transform 300ms, box-shadow 300ms;
+    transition: transform 300ms, box-shadow 300ms;
+    text-align: center;
+    /*border: 2px solid #fff;*/
+    text-align: center;
+    /*background: #ffffff;*/
+    /* height: 100%; */
+    width: 100%;
+}
+.logo-login img{
+    max-width: 142px;
+    margin: 0 auto;
+}
+.title-login{
+    color: #010101;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 3rem 0 1.7rem;
+}
+.login-card-body, .register-card-body{
+    background: none;
+    padding: 0!important;
+    border: none;
+    border-radius: 0!important;
+    color: initial;
+    outline: none;
+    min-height: auto;
+}
+.login .input-group{
+    margin: 0 0 7px;
+    border: 1px solid #ededed;
+    border-radius: 7px;
+    overflow: hidden;
+}
+.login .input-group-password{
+    margin-bottom: 25px;
+}
+.login .input-group input {
+   padding: 1px 45px 0;
+   border-radius: 7px;
+   height: 46px;
+   color: #888888;
+   font-size: 16px;
+   background: #ffffff;
+   border: none!important;
+}
+.login .input-group-user input {
+    background: #ffffff url(../images/icon_user_login.png) left 13px center no-repeat;
+}
+.login .input-group-password input {
+    background: #ffffff url(../images/icon_pass_login.png) left 13px center no-repeat;
+}
+.login .input-group-append .input-group-text{
+    background: #ffffff;
+    border: none;
+}
+.login .input-group-append span{
+    color: #cfcfcf;
+}
+.login > button {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    border: none;
+    border-radius: 7px;
+    background: rgb(221,176,61);
+    background: linear-gradient(90deg, rgba(221,176,61,1) 0%, rgba(255,227,115,1) 100%);
+    padding: 13px 15px 11px;
+    transition: all 0.5s;
+}
+.login > button:hover{
+    opacity: 0.7;
+}
+.btn-login-website{
+    margin: 4.625rem 0 1.6rem;
+}
+.btn-login-website a{
+    display: block;
+    text-align: center;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 7px;
+    border: 1px solid #000000;
+    padding: 12px 15px 10px;
+    position: relative;
+    overflow: hidden;
+}
+.btn-login-website a span{
+    position: relative;
+    z-index: 2;
+}
+.btn-login-website a:hover{
+    border: 1px solid #9f661d;
+    color: #ffffff;
+}
+.btn-login-website a:before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background: #9f661d;
+    border-radius: 3px;
+    left: 0;
+    top: 0;
+    transition: all 0.5s;
+    z-index: 1;
+}
+.btn-login-website a:hover:before{
+    width: 100%;
+}
+.btn-login-website a img{
+    margin-left: 5px;
+    margin-bottom: 1px;
+    transition: all 0.3s;
+}
+.btn-login-website a:hover img{
+    filter: brightness(0) invert(1);
+}
+.note-login{
+    color: #3c3c3c;
+    font-size: 16px;
+}
+.note-login span{
+    color: #000000;
+}
+@media (max-width: 1024px){
+    .flex-box-login{
+    }
+    .slide-login-box{
+        width: 100%;
+        margin-top: 15px;
+    }
+    .login-box{
+        width: 400px;
+        height: auto;
+    }
+    .box-login:before{position:absolute;width:1200px;height:1200px;top:calc(50% - 600px);left:50%;margin-left:-600px;content:"";background:transparent url(../images/trongdong.png) no-repeat center center;background-size:100% auto;opacity:.3}
+    .box-login:before{-webkit-animation-name:rotate;-webkit-animation-duration:60s;-webkit-animation-iteration-count:infinite;-webkit-animation-timing-function:linear;-moz-animation-name:rotate;-moz-animation-duration:60s;-moz-animation-iteration-count:infinite;-moz-animation-timing-function:linear}
+    .title-login,.btn-login-website{
+        margin: 1rem 0 1rem;
+    }
+    .login{
+        padding: 20px 15px;
+    }
+    .box-login{
+
+    }
+    .login-page{
+        background: #f0d546;
+        overflow: hidden;
+    }
+    .note-login{
+        display: none;
+    }
+    .img-slide-login img{
+        max-height: 300px;
+        object-fit: fill;
+    }
+}
+@media (max-width: 600px){
+    .slick-login-box{
+        padding: 0 15px;
+    }
+    .slick-login-box .slick-prev{
+        left: 15px;
+    }
+    .slick-login-box .slick-next{
+        right: 15px;
+    }
+    .flex-box-login{
+        
+    }
+    .box-login{
+        display: initial;
+        padding: 15px 0;
+    }
+}
+@media (max-width: 480px){
+    .login{
+        padding: 25px 18px;
+        min-width: auto;
+        width: 100%;
+    }
+    .login-box{
+        width: calc(100% - 30px);
+        margin-top: 0;
+    }
+    .title-login{
+        margin: 1rem 0 1rem;
+        font-size: 26px;
+    }
+    .btn-login-website{
+        margin: 1rem 0 0;
+    }
+    .loading-video video{
+        object-fit: fill;
+    }
+}

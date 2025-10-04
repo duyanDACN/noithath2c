@@ -1,0 +1,8 @@
+::1()--query--tables(delete from table_user_online where time < 1677122918) (10:38:38 23/02/2023)
+::1()--query--tables(delete from table_user_online where time < 1677122920) (10:38:40 23/02/2023)
+::1()--query--tables(delete from table_user_online where time < 1677122920) (10:38:40 23/02/2023)
+::1()--query--tables(delete from table_user_online where time < 1677122922) (10:38:42 23/02/2023)
+::1()--query--tables(delete from table_user_online where time < 1677122922) (10:38:42 23/02/2023)
+::1()--query--tables(delete from table_user_online where time < 1677122924) (10:38:44 23/02/2023)
+::1()--query--tables(delete from table_user_online where time < 1677122928) (10:38:48 23/02/2023)
+::1()--update--product([["","id","=","231"]]) (10:38:48 23/02/2023)
